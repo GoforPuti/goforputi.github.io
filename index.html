@@ -20,7 +20,7 @@ text {
 }
 
 </style>
-<svg width="960" height="960"></svg>
+<svg width="720" height="720"></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 
@@ -46,7 +46,17 @@ d3.json("plfj.json", function(error, root) {
       .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
 
   node.append("title")
-      .text(function(d) { return d.data.name + ":\n" + d.data.caption; });
+      .text(function(d) {
+/*          var disCap = d.data.name + ":\n" ; 
+          for(i=0; i<d.data.length; i++)
+          {
+              disCap = disCap + d.data.caption[i];
+
+          }
+          return disCap;}
+           //*/
+           return d.data.name + ":\n" + d.data.caption; }
+           );
 
   node.append("circle")
       .attr("r", function(d) { return d.r; });
