@@ -19,7 +19,26 @@ text {
   text-anchor: middle;
 }
 
+h1 {
+    font-size: 40px;
+}
+
 </style>
+
+<div id="xjxy">
+    <h1>
+        显教心要
+    </h1>
+
+    <h2>
+        一：小乘教：
+        <h3>
+            谓阿含等六百余卷经、婆沙等六百余卷论，说一切法从因缘生，明三界不安，了人空真理，修自利之行，
+            忻小乘之果。
+        </h3>
+    </h2>
+</div>
+
 <div id="plfj">
     <svg width="720" height="720"></svg>
 </div>
@@ -31,9 +50,11 @@ var svg = d3.select("#plfj").select("svg"),
     diameter = +svg.attr("width"),
     g = svg.append("g").attr("transform", "translate(2,2)"),
     format = d3.format(",d");
-
 var pack = d3.pack()
     .size([diameter - 4, diameter - 4]);
+
+//var xjxySvg = d3.select('#xjxy').select("svg"),
+//xjxyg = xjxySvg.append("g").attr("transform", "translate(2,2)"),
 
 d3.json("plfj.json", function(error, root) {
   if (error) throw error;
