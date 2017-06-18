@@ -4,9 +4,13 @@
  "children": [
   {   
    "name": "同教真心",
-   "caption": "...",
+   "caption": "于同教中复有二种：1.终教真心， 2.顿教真心",
    "children": [
-    {"name": "终教真心", "caption": "...", "size": 1},
+    {
+        "name": "终教真心", 
+        "caption": "...", 
+        "size": 1
+    },
     {"name": "顿教真心", "caption":"...", "size": 1}
    ]
   }, 
