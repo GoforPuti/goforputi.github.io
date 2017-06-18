@@ -20,11 +20,14 @@ text {
 }
 
 </style>
-<svg width="720" height="720"></svg>
+<div id="plfj">
+    <svg width="720" height="720"></svg>
+</div>
+
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 
-var svg = d3.select("svg"),
+var svg = d3.select("#plfj").select("svg"),
     diameter = +svg.attr("width"),
     g = svg.append("g").attr("transform", "translate(2,2)"),
     format = d3.format(",d");
